@@ -1,0 +1,191 @@
+/*******/
+/* Design card page */
+
+html {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+
+#about_cont > div {
+	width: 100%;
+}
+
+#top_buttons {
+	margin: auto;
+	width: 40vw;
+}
+
+
+.cardButtons {
+	margin: 2vw;
+	color: #ffb3b3;
+	font-size: 16px;
+	border: solid 3px #ff8080;
+	box-shadow: 4px;
+	border-radius: .4em;
+	padding: 5px;
+	background-color: #ffe6e6;
+	cursor: pointer;
+	color: #4d0000;
+}
+
+.colorButton {
+	width: 7vh;
+	height: 7vh;
+	border-radius: .25em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: outset;
+	border-width: thin;
+	cursor: pointer;
+}
+
+#colors {
+	display: flex;
+
+}
+
+.blue_button {
+	background-color: #1a53ff;
+}
+
+.blue_button:active {
+	background-color: #0033cc;
+	box-shadow: 0 2px #666;
+	transform: translateY(-1px);
+}
+
+.red_button {
+	background-color: #e60000;
+}
+
+.red_button:active {
+	background-color: #b30000;
+	box-shadow: 0 2px #666;
+	transform: translateY(-1px);
+}
+
+.yellow_button {
+	background-color: #ff9933;
+}
+
+.yellow_button:active {
+	background-color: #ff8000;
+	box-shadow: 0 2px #666;
+	transform: translateY(-1px);
+}
+
+.green_button {
+	background-color: #2d862d;
+}
+
+.green_button:active {
+	background-color: #206020;
+	box-shadow: 0 2px #666;
+	transform: translateY(-1px);
+}
+
+.purple_button {
+	background-color: #e600ac;
+}
+
+.purple_button:active {
+	background-color: #cc0099;
+	box-shadow: 0 2px #666;
+	transform: translateY(-1px);
+}
+
+#card_area {
+	margin-bottom: 4vh;
+	height: 50vh;
+	padding: 5%;
+}
+
+#card_image {
+	margin-left: auto;
+	margin-right: auto;
+	width: 49.7vw;
+	height: 28vw;
+	max-width: 639px;
+	max-height: 360px;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+@media screen and (max-width: 600px) {
+
+	#card_image {
+		margin-left: auto;
+		margin-right: auto;
+		width: 73vw;
+		height: 41vw;
+		max-width: 1063px;
+		max-height: 604px;
+		padding-top: 1vh;
+		border-top-left-radius: 1em;
+		border-top-right-radius: 1em;
+	}
+
+	#card_overlay {
+		width: 52.79vw;
+		height: 30vw;
+	}
+
+	#bottom_buttons {
+		text-align: center;
+		margin: auto;
+	}
+
+}
+
+#reset {
+	text-decoration: none;
+}
+
+#card_overlay {
+	pointer-events: none;
+	touch-action: none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:5;
+	height:100%;
+	width:100%;
+}
+
+#user_image {
+	max-width:100%;
+	max-height:100%;
+	overflow:hidden;
+}
+
+@media screen and (min-width: 880px) {
+
+	#bottom_buttons {
+		position: absolute;
+		bottom:28%;
+		left: 3vw;
+	}
+
+	#card_overlay {
+		width: 434px;
+		height: 244px;
+	}
+
+	#card_image {
+		width: 434px;
+		height: 244px;
+	}
+
+}
+
+.showImageControls {
+	visibility: visible;
+}
+
+.hideImageControls {
+	visibility: hidden;
+}
+
+/********************/

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>London By Sea</title>
+		<meta name="viewport" content="initial-scale=1" />
+		<meta charset="UTF-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+		<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/allpages.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/menu.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/designcard.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
+		<script src="../node_modules/jquery.panzoom/dist/jquery.panzoom.js"></script>
+		<script type="text/javascript" src="../scripts/menu.js"></script>
+		<script type="text/javascript" src="../scripts/designcard.js"></script>
+		<script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="../node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	</head>
+	<body>
+		<header id="menu_wrapper" class="navShow">
+			<div id="logo" class="menuhomeShow">
+				<a href="index.html"><img src="../images/LBSwhite.svg" id="header_image" alt=""/></a>
+				<div id="menu_items">
+						<a href="index.html">About Us.</a>
+						<a href="designcard.html">Design a Card.</a>
+						<a href="account">Your Account.</a>
+				</div>
+				<div id="nav_toggle" class="burgerFadeOut" onclick="openNav()"><img src="../images/burgermenu.svg" id="burger_menu" alt=""/></div>
+			</div>
+		</header>
+		<div id="menu_overlay" class="navHidden">
+			<a href="#" id="close_button" onclick="closeNav()">X</a>
+			<nav id="nav_middle" class="navMiddleHidden">
+				<ul>
+					<li class="middleItem"><a href="index.html">About Us.</a></li>
+					<li class="middleItem"><a href="designcard.html">Design a Card.</a></li>
+					<li class="middleItem"><a href="account">Your Account.</a></li>
+				</ul>
+				<img id="menu_img" src="../images/LBSblue.svg" alt=""/>
+			</nav>
+		</div>
+		<div id="about_cont" class="pageContainer">
+			<div class="pageHeading">
+				<h2 class="headingName">Design A Card</h2>
+			</div>
+			<div id="top_section">
+				<div id="top_buttons">
+					<div id="first_row">
+						<button class="cardButtons" onclick="loadImage()">>Load Image..</button>
+						<form action="/save" method="get"><button class="cardButtons">>Save Image..</button></form>
+					</div>
+					<div id="second_row">
+						<div id="colors">
+							<button class="colorButton blue_button" onclick="changeColor(this)"></button>
+							<button class="colorButton red_button" onclick="changeColor(this)"></button>
+							<button class="colorButton yellow_button" onclick="changeColor(this)"></button>
+							<button class="colorButton green_button" onclick="changeColor(this)"></button>
+							<button class="colorButton purple_button" onclick="changeColor(this)"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="card_area">
+				<!-- <div id="card_shell"> -->
+				<div id="card_image">
+					<img id="card_overlay" src="../images/cardcurent.svg" alt="" />
+					<div id="user_image" class="panzoom ui-widget-content">
+						<img id="image" src="#" alt=""/>
+					</div>
+				</div>
+				<!-- </div> -->
+				<div id="bottom_buttons" class="hideImageControls">
+					<!-- <button id="zoom_in" class="cardButtons"><a href="#">Zoom In.</a></button>
+					<button id="zoom_out" class="cardButtons"><a href="#">Zoom Out.</a></button> -->
+					<input type="range" id="zoom_range"/>
+					<a id="reset" class="cardButtons" href="#">>Reset.</a>
+				</div>
+			</div>
+			<div class="image_break">
+			</div>
+			<div class="footer">
+				<p>Lad Street,<br/>Woodingdean,<br/>Brighton.</p>
+				<img class="footerImg" src="../images/LBSblue.svg" alt=""/>
+			</div>
+		</div>
+	</body>
+	<!-- <script src="../node_modules/html2canvas/dist/html2canvas.js"></script>
+	<script src="../node_modules/html2canvas/dist/html2canvas.min.js"></script>
+	<script src="../node_modules/file-saver/FileSaver.js"></script>
+	<script src="../node_modules/file-saver/FileSaver.min.js"></script>
+	<script src="../node_modules/canvas2image/canvas2image.js"></script> -->
+</html>

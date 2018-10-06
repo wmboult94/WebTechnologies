@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>London By Sea</title>
+		<meta name="viewport" content="initial-scale=1" />
+		<meta charset="UTF-8" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/allpages.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/menu.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/account.css" />
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="../scripts/menu.js"></script>
+	</head>
+	<body>
+		<header id="menu_wrapper" class="navShow">
+			<div id="logo" class="menuhomeShow">
+				<a href="index.html"><img src="../images/LBSwhite.svg" id="header_image" alt="" /></a>
+				<div id="menu_items">
+						<a href="/index.html">About Us.</a>
+						<a href="/designcard.html">Design a Card.</a>
+						<a href="/account">Your Account.</a>
+				</div>
+				<div id="nav_toggle" class="burgerFadeOut" onclick="openNav()"><img src="../images/burgermenu.svg" id="burger_menu" alt="" />
+				</div>
+			</div>
+		</header>
+		<div id="menu_overlay" class="navHidden">
+			<a href="#" id="close_button" onclick="closeNav()">X</a>
+			<nav id="nav_middle" class="navMiddleHidden">
+				<ul>
+					<li class="middleItem"><a href="index.html">About Us.</a></li>
+					<li class="middleItem"><a href="designcard.html">Design a Card.</a></li>
+					<li class="middleItem"><a href="signin.html">Your Account.</a></li>
+				</ul>
+				<img id="menu_img" src="../images/LBSblue.svg" alt="" />
+			</nav>
+		</div>
+		<div id="account_cont" class="pageContainer">
+			<div class="pageHeading">
+				<h2 class="headingName">Your Account</h2>
+			</div>
+			<div id="content_main">
+				<div id="intro_section">
+					<p style="color:black;text-align:center;font-size:20px;margin:3%;">
+						Welcome back, Person Name!
+					</p>
+				</div>
+				<input id="toggle1" class="toggle" type="checkbox" checked="checked" />
+				<label id="label1" for="toggle1">Account Info</label>
+				<div id="expand1" class="expand">
+					<section>
+						<table>
+							<tr>
+								<td class="column1">name</td>
+								<td id="full_name" class="column2">Person Name</td>
+							</tr>
+							<tr>
+								<td class="column1">email</td>
+								<td id="email_addr" class="column2">p.name@mail.com</td>
+							</tr>
+							<tr>
+								<td>
+									<form action="/account/logout" method="post">
+										<button class="accountButton" type="submit">Logout</button>
+									</form>
+								</td>
+								<td>
+									<form action="/account/delete" method="post">
+										<button class="accountButton" type="submit">Delete Account</button>
+									</form>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</div>
+				<input id="toggle2" class="toggle" type="checkbox" checked="checked" />
+				<label id="label2" for="toggle2">Saved Card Designs</label>
+				<div id="expand2">
+					<div id="banner_cont">
+						<div class="photobanner">
+						</div>
+					</div>
+				</div>
+				<div id="background">
+					<img src="../images/lbs_logo.svg" alt="" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

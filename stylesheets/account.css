@@ -1,0 +1,152 @@
+
+body > * {
+	z-index: 5;
+}
+
+#background {
+	/*background-image: url('../images/lbs_logo.svg');*/
+	width: 50vw;
+	height: 60vh;
+	max-height: 600px;
+	max-width: 400px;
+	background-repeat: no-repeat;
+	/*position: absolute;*/
+	/*left: 2%;*/
+	margin-top: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+	/*right: 50%;*/
+	z-index: 1;
+	/*background-position-y: 80%;
+	background-position-x: 56vw;*/
+}
+
+#background>img {
+	position: absolute;
+	/*left: 50%;
+	right: 50%;*/
+	/*padding: 10%;*/
+	/*padding-left: 20px;*/
+	/*top: 2%;*/
+	max-height: 600px;
+	max-width: 400px;
+	/*text-align: center;*/
+	/*bottom: 2%;*/
+}
+
+#content_main > * {
+	width: 100%;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+}
+label:hover {
+  color: #000;
+}
+#label1::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "-";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+#label2::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "-";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+#expand1 {
+  height: 60vh;
+  overflow: hidden;
+  transition: height 0.5s;
+  /*background: url(http://placekitten.com/g/600/300);*/
+  /*color: black;*/
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	padding: 5vw;
+	text-align: left;
+}
+
+
+.column2 {
+	color: #002080;
+}
+
+.accountButton {
+	color: #4d0000;
+	font-size: 16px;
+	border: solid 3px #ff8080;
+	box-shadow: 4px;
+	border-radius: .4em;
+	padding: 5px;
+	background-color: #ffe6e6;
+	cursor: pointer;
+}
+
+#expand2 {
+  height: 30vh;
+  overflow: hidden;
+  transition: height 0.5s;
+  /*background: url(http://placekitten.com/g/600/300);*/
+  color: #FFF;
+}
+
+#banner_cont {
+	width: 100%;
+	margin: 10px auto;
+}
+
+.photobanner {
+	height: 90%;
+	width: 100%;
+	margin-bottom: 10px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space:nowrap
+}
+
+.first {
+	display: inline-block;
+}
+
+section {
+  padding: 0 20px;
+}
+#toggle1:checked ~ #expand1 {
+  height: 0;
+}
+#toggle1:checked ~ #label1::before {
+  content: "+";
+}
+#toggle2:checked ~ #expand2 {
+  height: 0;
+}
+#toggle2:checked ~ #label2::before {
+  content: "+";
+}

@@ -1,0 +1,87 @@
+/*******************/
+/* about page */
+
+#intro_section {
+	/*position: fixed;*/
+	position: relative;
+	min-width: 0;
+}
+
+#content {
+/*margin: 3%;*/
+top: 35%;
+position: absolute;
+background: #eee;
+/*top: auto;*/
+}
+
+.contentSection {
+	/*padding: 3%;*/
+	height: 90vh;
+	/*display: inline-flex;*/
+}
+
+/*.aboutImage {
+	box-shadow: 1px 0px 5px #888888;
+}*/
+
+#content > div > * {
+	padding: 5%;
+	/*margin: 2%;*/
+	/*width: 50%;*/
+	display: block;
+	/*top: 0;
+	left: 0;*/
+	left: 2%;
+	top: 1%;
+
+}
+
+#first_section > img {
+	left: 10%;
+	/*position: absolute;*/
+}
+
+#first_section {
+	/*height: 90vh;*/
+	z-index: 10;
+	background-image: url('../images/lbs_logo.svg');
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 56vw;
+}
+
+/*#first_section > * {
+	display: block;
+}*/
+
+#second_section {
+	background-color: #99c2ff;
+}
+
+.aboutImage {
+	margin-left:2%;
+	top:2%;
+	height:250px;
+	width:300px;
+}
+
+/********************/
+
+@media screen and (min-width: 750px) {
+
+	.scrollable {
+		font-size: 18px;
+	}
+
+	.aboutImage {
+		margin: auto;
+		height:33vw;
+		width:40vw;
+	}
+
+	#first_section {
+		margin-bottom: 3vh;
+	}
+
+}

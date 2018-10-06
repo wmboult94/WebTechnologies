@@ -1,0 +1,17 @@
+{
+  "name": "webtech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^4.0.0",
+    "formidable": "^1.1.1"
+  }
+}

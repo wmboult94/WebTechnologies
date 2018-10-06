@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>London By Sea</title>
+		<meta name="viewport" content="initial-scale=1" />
+		<meta charset="UTF-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+		<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/allpages.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/menu.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/signin.css"/>
+	</head>
+	<body>
+		<div class="pageHeading">
+			<h2 class="headingName">Create Account</h2>
+		</div>
+		<form class="userForm" action="/account/create" method="post">
+			<div class="container">
+				<label><b>First Name</b></label>
+				<input type="text" placeholder="Enter First Name" name="firstname" required="required"/>
+				<label><b>Surname</b></label>
+				<input type="text" placeholder="Enter Surname" name="surname" required="required"/>
+				<label><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" required="required"/>
+				<label><b>Email Address</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required="required"/>
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required="required"/>
+				<button type="submit">Create Account</button>
+				<a class="cancelBtn" href="signin.html">Cancel</a>
+			</div>
+		</form>
+		<div class="image_break">
+		</div>
+		<div class="footer">
+			<p>Lad Street,<br/>Woodingdean,<br/>Brighton.</p>
+			<img class="footerImg" src="../images/LBSblue.svg" alt=""/>
+		</div>
+	</body>
+</html>
